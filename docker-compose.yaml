@@ -1,0 +1,16 @@
+networks:
+  mybridge:
+volumes:
+ tomcatlogs:
+services:
+ myapp:
+  image: myapp-v1:latest
+  deploy:
+   replicas: 4
+  ports:
+   - 8080
+  volumes:
+   - tomcatlogs:/opt/tomcat/logs
+  networks:
+   - mybridge
+
