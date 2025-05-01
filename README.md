@@ -8,8 +8,8 @@ So, I first configured **Tomcat** and **JDK** to run my `sampleapp.war` file ins
 I also copied the `sampleapp.war` file into the container and set the necessary **environment variables**.
 - **Base Image**: `ubuntu:latest`
 - **Installs**:
-  - OpenJDK
-  - Apache Tomcat
+  - Copy OpenJDK.tar from my /home/ubuntu to .
+  - Copy Apache Tomcat.tar from my /home/ubuntu to .
 - **Copies**: `sampleapp.war` into Tomcat's webapps directory
 - **Sets**: Necessary environment variables for Java and Tomcat
 - **Runs**: Tomcat server on container startup
